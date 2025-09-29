@@ -1,0 +1,13 @@
+<div class="container"
+	<h1>Welcome to CloudFolks</h1>
+	<p>Visit Our website at <a href="https://cloudfolkshub.com" target=_"blank"> https://cloudfolkshub.com</a></p>
+	<p>You are testing the load balancer.</p>
+	<p>You got this page from server with hostname: <strong><?php echo gethostname();?> </strong></p>
+	<footer>
+		powered by cloudFolks 
+	</footer>
+</div>
+<a href="https://www.cloudfolkshub.com/courses/AWS-CLOUD-CLF-CO2--SAA-CO3-2023-62162a5a0cf2e282bb77aa4a" class="btn">Enroll to our course</a>
+</body>
+
+</html>

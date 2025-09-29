@@ -1,0 +1,112 @@
+arn:aws:iam::796973494537:mfa/aws_admin
+
+
+
+aws s3api put-bucket-versioning --bucket gaurav109 --versioning-configuration MFADelete=Disabled,Status=Enabled --mfa "arn:aws:iam::796973494537:mfa/Nokia 141809"
+
+aws s3api delete-object --bucket gaurav109 --key 34.pdf --version id null --mfa "arn:aws:iam::796973494537:mfa/Nokia 121433"  
+
+aws s3api delete-object --bucket gaurav109 --key 34.pdf --version-id null --mfa "arn:aws:iam::796973494537:mfa/Nokia 422304"
+
+
+==========================================================================
+"V5uPgMlBEsz.1qJunkQAkkyL7JiLlCVrAsPy2m66uLC205oQCr4m7g2vlO8DYkPSrJkZ2rW1NmbGeUXVYE.tmbxQkwe6v_90MeyElq1D8_myvGUK4dBIuJr2.lgHJTKP"
+
+aws s3api upload-part --bucket gaurav109 --key Daaku_Maharaaj_(2025)_Hindi_Movie_480p_HDCAM.mp4 --part-number 1 --body .\Daaku_Maharaaj_(2025)_Hindi_Movie_480p_HDCAM.zip.001 --upload-id "V5uPgMlBEsz.1qJunkQAkkyL7JiLlCVrAsPy2m66uLC205oQCr4m7g2vlO8DYkPSrJkZ2rW1NmbGeUXVYE.tmbxQkwe6v_90MeyElq1D8_myvGUK4dBIuJr2.lgHJTKP"
+part1 e tag
+ "ETag": "\"223fd1146e7c7f43b39ce14d5d69717e\""
+====================================================
+
+aws s3api upload-part --bucket gaurav109 --key Daaku_Maharaaj_(2025)_Hindi_Movie_480p_HDCAM.mp4 --part-number 2 --body .\Daaku_Maharaaj_(2025)_Hindi_Movie_480p_HDCAM.zip.002 --upload-id "V5uPgMlBEsz.1qJunkQAkkyL7JiLlCVrAsPy2m66uLC205oQCr4m7g2vlO8DYkPSrJkZ2rW1NmbGeUXVYE.tmbxQkwe6v_90MeyElq1D8_myvGUK4dBIuJr2.lgHJTKP"
+part-2
+{
+    "ServerSideEncryption": "AES256",
+    "ETag": "\"05403b583977f7cadc16c58842419412\""
+}
+================================================================
+aws s3api upload-part --bucket gaurav109 --key Daaku_Maharaaj_(2025)_Hindi_Movie_480p_HDCAM.mp4 --part-number 3 --body .\Daaku_Maharaaj_(2025)_Hindi_Movie_480p_HDCAM.zip.003 --upload-id "V5uPgMlBEsz.1qJunkQAkkyL7JiLlCVrAsPy2m66uLC205oQCr4m7g2vlO8DYkPSrJkZ2rW1NmbGeUXVYE.tmbxQkwe6v_90MeyElq1D8_myvGUK4dBIuJr2.lgHJTKP"
+
+
+
+{
+    "ServerSideEncryption": "AES256",
+    "ETag": "\"09ac33ab29a3d68e4b657cd8873bd4bc\""
+}
+
+=============================================================================
+aws s3api upload-part --bucket gaurav109 --key Daaku_Maharaaj_(2025)_Hindi_Movie_480p_HDCAM.mp4 --part-number 4 --body .\Daaku_Maharaaj_(2025)_Hindi_Movie_480p_HDCAM.zip.004 --upload-id "V5uPgMlBEsz.1qJunkQAkkyL7JiLlCVrAsPy2m66uLC205oQCr4m7g2vlO8DYkPSrJkZ2rW1NmbGeUXVYE.tmbxQkwe6v_90MeyElq1D8_myvGUK4dBIuJr2.lgHJTKP"
+
+{
+    "ServerSideEncryption": "AES256",
+    "ETag": "\"08de6f247880e6c88431a565f34af017\""
+}
+
+===========================================================
+aws s3api upload-part --bucket gaurav109 --key Daaku_Maharaaj_(2025)_Hindi_Movie_480p_HDCAM.mp4 --part-number 5 --body .\Daaku_Maharaaj_(2025)_Hindi_Movie_480p_HDCAM.zip.005 --upload-id "V5uPgMlBEsz.1qJunkQAkkyL7JiLlCVrAsPy2m66uLC205oQCr4m7g2vlO8DYkPSrJkZ2rW1NmbGeUXVYE.tmbxQkwe6v_90MeyElq1D8_myvGUK4dBIuJr2.lgHJTKP"
+
+
+{
+    "ServerSideEncryption": "AES256",
+    "ETag": "\"de249e054a1484da1326a1151a9e7c31\""
+}
+
+ 
+
+===========================================================================
+
+
+aws s3api list-parts --bucket gaurav109 --key Daaku_Maharaaj_(2025)_Hindi_Movie_480p_HDCAM.mp4 --upload-id "V5uPgMlBEsz.1qJunkQAkkyL7JiLlCVrAsPy2m66uLC205oQCr4m7g2vlO8DYkPSrJkZ2rW1NmbGeUXVYE.tmbxQkwe6v_90MeyElq1D8_myvGUK4dBIuJr2.lgHJTKP"
+
+
+
+=====================
+
+
+
+{
+  "Parts": [
+    {
+      "ETag": "\"223fd1146e7c7f43b39ce14d5d69717e\"",
+      "PartNumber": 1
+    },
+    {
+      "ETag": "\"05403b583977f7cadc16c58842419412\"",
+      "PartNumber": 2
+    },
+    {
+      "ETag": "\"09ac33ab29a3d68e4b657cd8873bd4bc\"",
+      "PartNumber": 3
+    },
+    {
+      "ETag": "\"08de6f247880e6c88431a565f34af017\"",
+      "PartNumber": 4
+    },
+    {
+      "ETag": "\"de249e054a1484da1326a1151a9e7c31\"",
+      "PartNumber": 5
+    }
+  ]
+}
+
+ 
+ 
+
+===========================
+
+aws s3api compelet-multipart-upload --bucket gaurav109 --key Daaku_Maharaaj_(2025)_Hindi_Movie_480p_HDCAM.mp4 --upload-id "V5uPgMlBEsz.1qJunkQAkkyL7JiLlCVrAsPy2m66uLC205oQCr4m7g2vlO8DYkPSrJkZ2rW1NmbGeUXVYE.tmbxQkwe6v_90MeyElq1D8_myvGUK4dBIuJr2.lgHJTKP" --multipart-upload file://myfile.json
+
+
+======================================================
+
+
+
+C:\Users\GauravUpadhayay\Downloads\gaurav>aws s3api complete-multipart-upload --bucket gaurav109 --key Daaku_Maharaaj_(2025)_Hindi_Movie_480p_HDCAM.mp4 --upload-id "V5uPgMlBEsz.1qJunkQAkkyL7JiLlCVrAsPy2m66uLC205oQCr4m7g2vlO8DYkPSrJkZ2rW1NmbGeUXVYE.tmbxQkwe6v_90MeyElq1D8_myvGUK4dBIuJr2.lgHJTKP" --multipart-upload file://myfile.json
+{
+    "ServerSideEncryption": "AES256",
+    "VersionId": "9C_SnSmCF3dse3v7tQf_a4GrOvnG7BMm",
+    "Location": "https://gaurav109.s3.ap-south-1.amazonaws.com/Daaku_Maharaaj_%282025%29_Hindi_Movie_480p_HDCAM.mp4",
+    "Bucket": "gaurav109",
+    "Key": "Daaku_Maharaaj_(2025)_Hindi_Movie_480p_HDCAM.mp4",
+    "ETag": "\"656b173b4b0eb2614e92ea315333d9ef-5\""
+}
+
